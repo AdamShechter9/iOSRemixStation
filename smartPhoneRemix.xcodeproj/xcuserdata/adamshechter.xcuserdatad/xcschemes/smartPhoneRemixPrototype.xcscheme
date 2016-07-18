@@ -17,7 +17,7 @@
                BlueprintIdentifier = "A52D03CE1D3968A200965C7C"
                BuildableName = "smartPhoneRemixPrototype.app"
                BlueprintName = "smartPhoneRemixPrototype"
-               ReferencedContainer = "container:smartPhoneRemixPrototype.xcodeproj">
+               ReferencedContainer = "container:smartPhoneRemix.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "A52D03E21D3968A300965C7C"
                BuildableName = "smartPhoneRemixPrototypeTests.xctest"
                BlueprintName = "smartPhoneRemixPrototypeTests"
-               ReferencedContainer = "container:smartPhoneRemixPrototype.xcodeproj">
+               ReferencedContainer = "container:smartPhoneRemix.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -45,7 +45,7 @@
                BlueprintIdentifier = "A52D03ED1D3968A300965C7C"
                BuildableName = "smartPhoneRemixPrototypeUITests.xctest"
                BlueprintName = "smartPhoneRemixPrototypeUITests"
-               ReferencedContainer = "container:smartPhoneRemixPrototype.xcodeproj">
+               ReferencedContainer = "container:smartPhoneRemix.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,7 +55,7 @@
             BlueprintIdentifier = "A52D03CE1D3968A200965C7C"
             BuildableName = "smartPhoneRemixPrototype.app"
             BlueprintName = "smartPhoneRemixPrototype"
-            ReferencedContainer = "container:smartPhoneRemixPrototype.xcodeproj">
+            ReferencedContainer = "container:smartPhoneRemix.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -78,7 +78,7 @@
             BlueprintIdentifier = "A52D03CE1D3968A200965C7C"
             BuildableName = "smartPhoneRemixPrototype.app"
             BlueprintName = "smartPhoneRemixPrototype"
-            ReferencedContainer = "container:smartPhoneRemixPrototype.xcodeproj">
+            ReferencedContainer = "container:smartPhoneRemix.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -97,7 +97,7 @@
             BlueprintIdentifier = "A52D03CE1D3968A200965C7C"
             BuildableName = "smartPhoneRemixPrototype.app"
             BlueprintName = "smartPhoneRemixPrototype"
-            ReferencedContainer = "container:smartPhoneRemixPrototype.xcodeproj">
+            ReferencedContainer = "container:smartPhoneRemix.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
