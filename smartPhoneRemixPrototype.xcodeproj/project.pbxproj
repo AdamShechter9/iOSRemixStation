@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A52D03D31D3968A200965C7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52D03D21D3968A200965C7C /* AppDelegate.swift */; };
+		A52D03D51D3968A200965C7C /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52D03D41D3968A200965C7C /* MainController.swift */; };
+		A52D03D81D3968A200965C7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52D03D61D3968A200965C7C /* Main.storyboard */; };
+		A52D03DA1D3968A200965C7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52D03D91D3968A200965C7C /* Assets.xcassets */; };
+		A52D03DD1D3968A200965C7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52D03DB1D3968A200965C7C /* LaunchScreen.storyboard */; };
+		A52D03E81D3968A300965C7C /* smartPhoneRemixPrototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52D03E71D3968A300965C7C /* smartPhoneRemixPrototypeTests.swift */; };
+		A52D03F31D3968A300965C7C /* smartPhoneRemixPrototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52D03F21D3968A300965C7C /* smartPhoneRemixPrototypeUITests.swift */; };
+		A5634B241D39994100BF583C /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5634B231D39994100BF583C /* AudioKit.framework */; };
+		A5634B251D39994100BF583C /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5634B231D39994100BF583C /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5634B331D39B5FE00BF583C /* samplerPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5634B321D39B5FE00BF583C /* samplerPlayer.swift */; };
+		A570513F1D3C677800E96C46 /* cali_love.wav in Resources */ = {isa = PBXBuildFile; fileRef = A570513E1D3C677800E96C46 /* cali_love.wav */; };
+		A57051411D3C678000E96C46 /* thriller.wav in Resources */ = {isa = PBXBuildFile; fileRef = A57051401D3C678000E96C46 /* thriller.wav */; };
+		A57051431D3C678600E96C46 /* lucky.wav in Resources */ = {isa = PBXBuildFile; fileRef = A57051421D3C678600E96C46 /* lucky.wav */; };
+		A57051451D3C678F00E96C46 /* magic.wav in Resources */ = {isa = PBXBuildFile; fileRef = A57051441D3C678F00E96C46 /* magic.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A52D03E41D3968A300965C7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A52D03C71D3968A200965C7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A52D03CE1D3968A200965C7C;
+			remoteInfo = smartPhoneRemixPrototype;
+		};
+		A52D03EF1D3968A300965C7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A52D03C71D3968A200965C7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A52D03CE1D3968A200965C7C;
+			remoteInfo = smartPhoneRemixPrototype;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A52D04071D39773000965C7C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A5634B251D39994100BF583C /* AudioKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A52D03CF1D3968A200965C7C /* smartPhoneRemixPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smartPhoneRemixPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A52D03D21D3968A200965C7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A52D03D41D3968A200965C7C /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		A52D03D71D3968A200965C7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A52D03D91D3968A200965C7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A52D03DC1D3968A200965C7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A52D03DE1D3968A200965C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A52D03E31D3968A300965C7C /* smartPhoneRemixPrototypeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartPhoneRemixPrototypeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A52D03E71D3968A300965C7C /* smartPhoneRemixPrototypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartPhoneRemixPrototypeTests.swift; sourceTree = "<group>"; };
+		A52D03E91D3968A300965C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A52D03EE1D3968A300965C7C /* smartPhoneRemixPrototypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartPhoneRemixPrototypeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A52D03F21D3968A300965C7C /* smartPhoneRemixPrototypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartPhoneRemixPrototypeUITests.swift; sourceTree = "<group>"; };
+		A52D03F41D3968A300965C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A52D04081D39781A00965C7C /* AudioKit-iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "AudioKit-iOS"; path = "../../../AudioKit-iOS"; sourceTree = "<group>"; };
+		A5634B231D39994100BF583C /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+		A5634B321D39B5FE00BF583C /* samplerPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = samplerPlayer.swift; sourceTree = "<group>"; };
+		A570513E1D3C677800E96C46 /* cali_love.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cali_love.wav; sourceTree = "<group>"; };
+		A57051401D3C678000E96C46 /* thriller.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = thriller.wav; sourceTree = "<group>"; };
+		A57051421D3C678600E96C46 /* lucky.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lucky.wav; sourceTree = "<group>"; };
+		A57051441D3C678F00E96C46 /* magic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = magic.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A52D03CC1D3968A200965C7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5634B241D39994100BF583C /* AudioKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A52D03E01D3968A300965C7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A52D03EB1D3968A300965C7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A52D03C61D3968A200965C7C = {
+			isa = PBXGroup;
+			children = (
+				A5634B231D39994100BF583C /* AudioKit.framework */,
+				A52D04081D39781A00965C7C /* AudioKit-iOS */,
+				A52D03D11D3968A200965C7C /* smartPhoneRemixPrototype */,
+				A52D03E61D3968A300965C7C /* smartPhoneRemixPrototypeTests */,
+				A52D03F11D3968A300965C7C /* smartPhoneRemixPrototypeUITests */,
+				A52D03D01D3968A200965C7C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A52D03D01D3968A200965C7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A52D03CF1D3968A200965C7C /* smartPhoneRemixPrototype.app */,
+				A52D03E31D3968A300965C7C /* smartPhoneRemixPrototypeTests.xctest */,
+				A52D03EE1D3968A300965C7C /* smartPhoneRemixPrototypeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A52D03D11D3968A200965C7C /* smartPhoneRemixPrototype */ = {
+			isa = PBXGroup;
+			children = (
+				A52D03D21D3968A200965C7C /* AppDelegate.swift */,
+				A52D03D41D3968A200965C7C /* MainController.swift */,
+				A52D03D61D3968A200965C7C /* Main.storyboard */,
+				A5634B321D39B5FE00BF583C /* samplerPlayer.swift */,
+				A52D03D91D3968A200965C7C /* Assets.xcassets */,
+				A52D03DB1D3968A200965C7C /* LaunchScreen.storyboard */,
+				A57051421D3C678600E96C46 /* lucky.wav */,
+				A57051441D3C678F00E96C46 /* magic.wav */,
+				A57051401D3C678000E96C46 /* thriller.wav */,
+				A570513E1D3C677800E96C46 /* cali_love.wav */,
+				A52D03DE1D3968A200965C7C /* Info.plist */,
+			);
+			path = smartPhoneRemixPrototype;
+			sourceTree = "<group>";
+		};
+		A52D03E61D3968A300965C7C /* smartPhoneRemixPrototypeTests */ = {
+			isa = PBXGroup;
+			children = (
+				A52D03E71D3968A300965C7C /* smartPhoneRemixPrototypeTests.swift */,
+				A52D03E91D3968A300965C7C /* Info.plist */,
+			);
+			path = smartPhoneRemixPrototypeTests;
+			sourceTree = "<group>";
+		};
+		A52D03F11D3968A300965C7C /* smartPhoneRemixPrototypeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A52D03F21D3968A300965C7C /* smartPhoneRemixPrototypeUITests.swift */,
+				A52D03F41D3968A300965C7C /* Info.plist */,
+			);
+			path = smartPhoneRemixPrototypeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A52D03CE1D3968A200965C7C /* smartPhoneRemixPrototype */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A52D03F71D3968A300965C7C /* Build configuration list for PBXNativeTarget "smartPhoneRemixPrototype" */;
+			buildPhases = (
+				A52D03CB1D3968A200965C7C /* Sources */,
+				A52D03CC1D3968A200965C7C /* Frameworks */,
+				A52D03CD1D3968A200965C7C /* Resources */,
+				A52D04071D39773000965C7C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = smartPhoneRemixPrototype;
+			productName = smartPhoneRemixPrototype;
+			productReference = A52D03CF1D3968A200965C7C /* smartPhoneRemixPrototype.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A52D03E21D3968A300965C7C /* smartPhoneRemixPrototypeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A52D03FA1D3968A300965C7C /* Build configuration list for PBXNativeTarget "smartPhoneRemixPrototypeTests" */;
+			buildPhases = (
+				A52D03DF1D3968A300965C7C /* Sources */,
+				A52D03E01D3968A300965C7C /* Frameworks */,
+				A52D03E11D3968A300965C7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A52D03E51D3968A300965C7C /* PBXTargetDependency */,
+			);
+			name = smartPhoneRemixPrototypeTests;
+			productName = smartPhoneRemixPrototypeTests;
+			productReference = A52D03E31D3968A300965C7C /* smartPhoneRemixPrototypeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A52D03ED1D3968A300965C7C /* smartPhoneRemixPrototypeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A52D03FD1D3968A300965C7C /* Build configuration list for PBXNativeTarget "smartPhoneRemixPrototypeUITests" */;
+			buildPhases = (
+				A52D03EA1D3968A300965C7C /* Sources */,
+				A52D03EB1D3968A300965C7C /* Frameworks */,
+				A52D03EC1D3968A300965C7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A52D03F01D3968A300965C7C /* PBXTargetDependency */,
+			);
+			name = smartPhoneRemixPrototypeUITests;
+			productName = smartPhoneRemixPrototypeUITests;
+			productReference = A52D03EE1D3968A300965C7C /* smartPhoneRemixPrototypeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A52D03C71D3968A200965C7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Adam Shechter";
+				TargetAttributes = {
+					A52D03CE1D3968A200965C7C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 42LTCX3AQU;
+					};
+					A52D03E21D3968A300965C7C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A52D03CE1D3968A200965C7C;
+					};
+					A52D03ED1D3968A300965C7C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A52D03CE1D3968A200965C7C;
+					};
+				};
+			};
+			buildConfigurationList = A52D03CA1D3968A200965C7C /* Build configuration list for PBXProject "smartPhoneRemixPrototype" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A52D03C61D3968A200965C7C;
+			productRefGroup = A52D03D01D3968A200965C7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A52D03CE1D3968A200965C7C /* smartPhoneRemixPrototype */,
+				A52D03E21D3968A300965C7C /* smartPhoneRemixPrototypeTests */,
+				A52D03ED1D3968A300965C7C /* smartPhoneRemixPrototypeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A52D03CD1D3968A200965C7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A57051451D3C678F00E96C46 /* magic.wav in Resources */,
+				A52D03DD1D3968A200965C7C /* LaunchScreen.storyboard in Resources */,
+				A570513F1D3C677800E96C46 /* cali_love.wav in Resources */,
+				A57051431D3C678600E96C46 /* lucky.wav in Resources */,
+				A52D03DA1D3968A200965C7C /* Assets.xcassets in Resources */,
+				A57051411D3C678000E96C46 /* thriller.wav in Resources */,
+				A52D03D81D3968A200965C7C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A52D03E11D3968A300965C7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A52D03EC1D3968A300965C7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A52D03CB1D3968A200965C7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52D03D51D3968A200965C7C /* MainController.swift in Sources */,
+				A52D03D31D3968A200965C7C /* AppDelegate.swift in Sources */,
+				A5634B331D39B5FE00BF583C /* samplerPlayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A52D03DF1D3968A300965C7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52D03E81D3968A300965C7C /* smartPhoneRemixPrototypeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A52D03EA1D3968A300965C7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52D03F31D3968A300965C7C /* smartPhoneRemixPrototypeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A52D03E51D3968A300965C7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A52D03CE1D3968A200965C7C /* smartPhoneRemixPrototype */;
+			targetProxy = A52D03E41D3968A300965C7C /* PBXContainerItemProxy */;
+		};
+		A52D03F01D3968A300965C7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A52D03CE1D3968A200965C7C /* smartPhoneRemixPrototype */;
+			targetProxy = A52D03EF1D3968A300965C7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A52D03D61D3968A200965C7C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A52D03D71D3968A200965C7C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A52D03DB1D3968A200965C7C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A52D03DC1D3968A200965C7C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A52D03F51D3968A300965C7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A52D03F61D3968A300965C7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A52D03F81D3968A300965C7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = smartPhoneRemixPrototype/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = adam.s.develops.smartPhoneRemixPrototype;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		A52D03F91D3968A300965C7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = smartPhoneRemixPrototype/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = adam.s.develops.smartPhoneRemixPrototype;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		A52D03FB1D3968A300965C7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = smartPhoneRemixPrototypeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = adam.s.develops.smartPhoneRemixPrototypeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smartPhoneRemixPrototype.app/smartPhoneRemixPrototype";
+			};
+			name = Debug;
+		};
+		A52D03FC1D3968A300965C7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = smartPhoneRemixPrototypeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = adam.s.develops.smartPhoneRemixPrototypeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smartPhoneRemixPrototype.app/smartPhoneRemixPrototype";
+			};
+			name = Release;
+		};
+		A52D03FE1D3968A300965C7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = smartPhoneRemixPrototypeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = adam.s.develops.smartPhoneRemixPrototypeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = smartPhoneRemixPrototype;
+			};
+			name = Debug;
+		};
+		A52D03FF1D3968A300965C7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = smartPhoneRemixPrototypeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = adam.s.develops.smartPhoneRemixPrototypeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = smartPhoneRemixPrototype;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A52D03CA1D3968A200965C7C /* Build configuration list for PBXProject "smartPhoneRemixPrototype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A52D03F51D3968A300965C7C /* Debug */,
+				A52D03F61D3968A300965C7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A52D03F71D3968A300965C7C /* Build configuration list for PBXNativeTarget "smartPhoneRemixPrototype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A52D03F81D3968A300965C7C /* Debug */,
+				A52D03F91D3968A300965C7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A52D03FA1D3968A300965C7C /* Build configuration list for PBXNativeTarget "smartPhoneRemixPrototypeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A52D03FB1D3968A300965C7C /* Debug */,
+				A52D03FC1D3968A300965C7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A52D03FD1D3968A300965C7C /* Build configuration list for PBXNativeTarget "smartPhoneRemixPrototypeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A52D03FE1D3968A300965C7C /* Debug */,
+				A52D03FF1D3968A300965C7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A52D03C71D3968A200965C7C /* Project object */;
+}
