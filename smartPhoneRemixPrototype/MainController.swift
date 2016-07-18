@@ -18,6 +18,8 @@ class MainController: UIViewController
     var motionSelectorSwitch = 0
     // CoreMotion motion manager
     
+    let manager = CMMotionManager()
+    
     
     @IBOutlet weak var pitchSliderValue: UISlider!
     @IBOutlet weak var speedSliderValue: UISlider!
@@ -82,28 +84,45 @@ class MainController: UIViewController
     
     func accelInit()
     {
-        let manager = CMMotionManager()
         print ("acceloremeter initializing")
         manager.startAccelerometerUpdates()
         manager.accelerometerUpdateInterval = 0.1
-        manager.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue())
-        {
-            (data: CMAccelerometerData?, error: NSError?) in
-            print(data?.acceleration.x)
-            print(data?.acceleration.y)
-            print(data?.acceleration.z)
-            switch self.motionSelectorSwitch
-            {
-            case 0:
+        manager.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue()){
+            (data, error) in
+            print (data?.acceleration.x)
+            print (data?.acceleration.y)
+            print (data?.acceleration.z)
+            print (self.motionSelectorSwitch)
+            if self.motionSelectorSwitch == 0{
+                // Pitch and Rate controllers
+                self.pitchSliderValue.value = Float((data?.acceleration.x)!)
+                self.speedSliderValue.value = Float((data?.acceleration.y)!) + 1.0
+                
+                let newPitch = Double((data?.acceleration.x)! * 1000)
+                self.samplerPlayer1.changePitch(newPitch)
+                
+                let newRate = Double( (data?.acceleration.y)! + 1.0) + 0.03125
+                self.samplerPlayer1.changeRate(newRate)
+                
+            }else if self.motionSelectorSwitch == 1{
+                // filter and volume controllers
+                self.filterSliderValue.value = Float((data?.acceleration.x)! + 1) / 2
+                self.volSliderValue.value =  Float((data?.acceleration.y)! + 1) / 2 * 0.75
+                
+                let newCutoff = Double(((data?.acceleration.x)! + 1) / 2)
+                self.samplerPlayer1.changeFilterCutoff(newCutoff)
+                
+                let newVol = Double(((data?.acceleration.y)! + 1) / 2 * 0.75)
+                self.samplerPlayer1.changeVolume(newVol)
+                
+            }else{
                 self.pitchSliderValue.value = Float((data?.acceleration.x)!)
                 self.speedSliderValue.value = Float((data?.acceleration.y)!)
-            case 1:
-                self.filterSliderValue.value = Float((data?.acceleration.x)!)
-                self.volSliderValue.value =  Float((data?.acceleration.y)!)
-            default:
+                
                 self.pitchSliderValue.value = Float((data?.acceleration.x)!)
                 self.speedSliderValue.value = Float((data?.acceleration.y)!)
             }
+            
         }
     }
     
